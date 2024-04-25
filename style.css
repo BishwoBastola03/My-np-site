@@ -1,10 +1,11 @@
+
 body, html {
   height: 100%;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
+  background-color: #000; /* Updated to black */
 }
 
 .welcome-container {
@@ -12,6 +13,7 @@ body, html {
 }
 
 .welcome-message {
+  color: #FFF; /* Ensures the text is visible on a black background */
   opacity: 0;
   transform: translateY(20px);
   animation: welcomeAnimation 2s forwards;
@@ -27,3 +29,25 @@ body, html {
     transform: translateY(0);
   }
 }
+
+.top-banner {
+    position: fixed; /* Fix position to the top of the page */
+    width: 100%; /* Full width */
+    top: 0; /* Position at the very top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it sits above other content */
+    overflow: hidden; /* Ensure the content doesn't spill out */
+}
+
+.top-banner img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+body {
+    padding-top: 60px; /* Adjust based on the height of your banner */
+}
+
+
+
+
