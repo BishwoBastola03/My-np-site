@@ -1,0 +1,29 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.welcome-container {
+  text-align: center;
+}
+
+.welcome-message {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: welcomeAnimation 2s forwards;
+}
+
+@keyframes welcomeAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
